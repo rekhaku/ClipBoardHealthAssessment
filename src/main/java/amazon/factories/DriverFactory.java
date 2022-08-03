@@ -24,7 +24,7 @@ public class DriverFactory {
     }
 
     public static WebDriver getDriver() {
-        log.info("Getting driver for host: {}", HOST);
+      //  log.info("Getting driver for host: {}", HOST);
         switch (HOST) {
             case LOCALHOST:
                 return getLocalWebDriver();
@@ -38,7 +38,7 @@ public class DriverFactory {
     }
 
     private static WebDriver getLocalWebDriver() {
-        log.info("Getting driver for browser: {}", BROWSER);
+    //    log.info("Getting driver for browser: {}", BROWSER);
         switch (BROWSER) {
             case CHROME:
                 WebDriverManager.chromedriver().setup();

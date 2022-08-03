@@ -17,7 +17,7 @@ public class URLFactory {
     }
 
     public static URL getHostURL(Host host) {
-        log.info("Getting hostURL for Host: {}", host);
+      //  log.info("Getting hostURL for Host: {}", host);
         try {
             return new URL(config.getString("HOST_URI"));
         } catch (MalformedURLException e) {
